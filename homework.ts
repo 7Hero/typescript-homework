@@ -144,6 +144,7 @@ interface Car {
 type ApiResponse1<T> = {
   data: {
     [key: string]: T | number;
+    pagination: number;
   };
   errors: string[];
 };
